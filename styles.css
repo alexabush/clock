@@ -1,0 +1,46 @@
+#clock {
+  height: 500px;
+  /*height: 500px;*/
+  width: 500px;
+  border-radius: 500px;
+  border: 1px solid black;
+  position: relative; }
+
+.hand,
+.num {
+  position: absolute;
+  left: calc(500px / 2); }
+
+.hand {
+  background-color: black; }
+
+.num {
+  font-size: 24px; }
+
+#second {
+  top: calc(500px / 2 - 200px);
+  height: 200px;
+  width: 2px;
+  animation: tick 60s infinite linear; }
+
+#minute {
+  top: calc(500px / 2 - 150px);
+  height: 150px;
+  width: 3px;
+  animation: tick 3600s infinite linear; }
+
+#hour {
+  top: calc(500px / 2 - 100px);
+  height: 100px;
+  width: 5px;
+  animation: tick 43200s infinite linear; }
+
+@keyframes tick {
+  0% {
+    transform: rotate(1deg);
+    transform-origin: bottom; }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: bottom; } }
+
+/*# sourceMappingURL=styles.css.map */
