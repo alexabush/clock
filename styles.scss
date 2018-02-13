@@ -19,39 +19,30 @@ $clockRadius: 500px;
   background-color: black;
 }
 
-.num {
-  font-size: 24px;
-}
+// #second,
+// #minute,
+// #hour {
+//   transform-origin: "bottom";
+// }
 
 #second {
   top: calc(#{$clockRadius} / 2 - 200px);
   height: 200px;
   width: 2px;
-  animation: tick 60s infinite linear;
 }
 
 #minute {
   top: calc(#{$clockRadius} / 2 - 150px);
   height: 150px;
   width: 3px;
-  animation: tick 3600s infinite linear;
 }
 
 #hour {
   top: calc(#{$clockRadius} / 2 - 100px);
   height: 100px;
   width: 5px;
-  animation: tick 43200s infinite linear;
 }
 
-@keyframes tick {
-  0% {
-    transform: rotate(1deg);
-    transform-origin: bottom;
-  }
-
-  100% {
-    transform: rotate(360deg);
-    transform-origin: bottom;
-  }
+.num {
+  font-size: 24px;
 }
